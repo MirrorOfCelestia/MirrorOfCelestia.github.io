@@ -11,53 +11,50 @@
       background-color: #f9f9f9;
       color: #333;
       max-width: 1200px;
-      display: flex;
-      gap: 40px;
+      margin-left: auto;
+      margin-right: auto;
     }
     header {
-      flex-basis: 100%;
       border-bottom: 3px solid #4CAF50;
       padding-bottom: 15px;
       margin-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
     }
-    nav a {
-      margin-right: 15px;
+    header h1 {
+      color: #2E7D32;
+      margin: 0;
+      flex: 1 1 300px;
+    }
+    nav.top-nav {
+      flex: 1 1 400px;
+      text-align: right;
+    }
+    nav.top-nav a {
+      margin-left: 15px;
       text-decoration: none;
       color: #4CAF50;
       font-weight: bold;
     }
-    nav a:hover {
+    nav.top-nav a:hover {
       text-decoration: underline;
     }
-    h1, h2 {
-      color: #2E7D32;
+    main.container {
+      display: flex;
+      gap: 40px;
     }
-    section {
-      margin-bottom: 40px;
-      line-height: 1.6;
-    }
-    a {
-      color: #2E7D32;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 8px;
-    }
-
-    /* Sidebar TOC styles */
     nav#toc {
       width: 220px;
       position: sticky;
       top: 20px;
-      align-self: flex-start;
       background: white;
       border: 1px solid #ddd;
       padding: 20px;
       border-radius: 8px;
       height: fit-content;
+      align-self: flex-start;
     }
     nav#toc h3 {
       margin-top: 0;
@@ -78,17 +75,30 @@
     nav#toc a:hover {
       text-decoration: underline;
     }
-
     main#content {
       flex-grow: 1;
       max-width: 800px;
+    }
+    section {
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+    a {
+      color: #2E7D32;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 8px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Pokémon Academy Life Forever Guide</h1>
-    <nav>
+    <nav class="top-nav">
       <a href="index.html">Home</a>
       <a href="characters.html">Characters</a>
       <a href="walkthrough.html">Walkthrough</a>
@@ -96,66 +106,67 @@
     </nav>
   </header>
 
-  <nav id="toc">
-    <h3>Contents</h3>
-    <ul>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#about">About PALF</a></li>
-      <li><a href="#story">Story</a></li>
-      <li><a href="#characters">Characters</a></li>
-      <li><a href="#links">Download</a></li>
-      <li><a href="#social-media">Social Media</a></li>
-    </ul>
-  </nav>
-
-  <main id="content">
-    <section id="introduction">
-      <h2>Introduction</h2>
-      <p>Hi everyone! You can call me <strong>Akira</strong> (also known as <em>MirrorOfCelestia</em>). I know most of you might skip this part, so don’t worry — there’s no vital info here. That said, I just want to thank you for taking the time to check out this guide (and hopefully enjoy the game too)!</p>
-      <p><strong>Pokémon Academy Life Forever</strong> has been one of my favorite dating sims — fun, charming, and full of heart. But I’ll be honest: it has a steep learning curve. It took me multiple playthroughs to really understand how things worked, and I often found myself searching online for help… only to come up empty.</p>
-      <p>That’s where this guide comes in. Whether you’re new or returning, this is meant to teach you everything you need to know to get the most enjoyable experience possible — before and during your playthroughs.</p>
-      <p>I’ve done my best to make this guide clear, helpful, and easy to follow, so you can focus on what matters: enjoying your time at the Academy.</p>
-      <p>If you have any questions, feedback (hopefully positive!), or constructive criticism, feel free to reach out. I’d love to hear from you and make this guide even better.</p>
-      <p><strong>Good luck, and have fun!</strong></p>
-      <p>— Akira Kagami (MirrorOfCelestia)</p>
-
-      <p><em>Disclaimer: This is a fan-made guide and is not affiliated with, endorsed by, or officially connected to the developers of Pokémon Academy Life Forever. All characters, content, and materials referenced belong to their respective creators. This guide was made purely for educational and entertainment purposes.</em></p>
-    </section>
-
-    <section id="about">
-      <h2>About Pokémon Academy Life Forever (PALF)</h2>
-      <p>Pokémon Academy Life Forever (PALF) is a non-profit, fan-made Ren’Py visual novel developed by Freudian Creations. It takes place in an alternate Pokémon world where characters from the core Pokémon series are placed in a university setting to learn about the world of Pokémon.</p>
-      <p>PALF is a remake of the original Pokémon Academy Life, a project that led to developer burnout and was eventually scrapped. The team at Freudian Creations took up the project and rebuilt it into what it is today.</p>
-    </section>
-
-    <section id="story">
-      <h2>Story</h2>
-      <p>To become a Pokémon Champion has been your dream for as long as you can remember. But to achieve that dream, you first need to learn the ropes — and what better place than the prestigious Kobukan Academy?</p>
-      <p>After receiving an invitation to the academy, you’ll spend your time exploring the Kobukan region, catching and training Pokémon, and learning all about the world around you. Along the way, you might even form close bonds with new faces and old friends.</p>
-      <p>But Kobukan Academy is full of mysteries... including one pressing question: how will you ever pay off your university debt?</p>
-    </section>
-
-    <section id="characters">
-      <h2>Characters</h2>
-      <p>This section will be developed soon. Stay tuned for detailed character profiles and romance options!</p>
-    </section>
-
-    <section id="links">
-      <h2>Download</h2>
-      <p>Get the game files here:</p>
-      <p>I NEED PERMISSION</p>
-    </section>
-
-    <section id="social-media">
-      <h2>Social Media</h2>
+  <main class="container">
+    <nav id="toc">
+      <h3>Contents</h3>
       <ul>
-        <li><a href="https://bsky.app/profile/pkmnacademylife.bsky.social" target="_blank">Bluesky</a></li>
-        <li><a href="https://x.com/pokemonvisual" target="_blank">X (Twitter)</a></li>
-        <li><a href="https://www.youtube.com/channel/UCVFjaOTaT_CMSL8MdIBRsBg" target="_blank">YouTube</a></li>
-        <li><a href="https://www.pokecommunity.com/threads/pokémon-academy-life-forever.493106/" target="_blank">PokeCommunity Thread</a></li>
-        <li><a href="https://discord.com/invite/RRd2Srjp7n" target="_blank">Discord</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#about">About PALF</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#links">Download</a></li>
+        <li><a href="#social-media">Social Media</a></li>
       </ul>
-    </section>
+    </nav>
+
+    <main id="content">
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Hi everyone! You can call me <strong>Akira</strong> (also known as <em>MirrorOfCelestia</em>). I know most of you might skip this part, so don’t worry — there’s no vital info here. That said, I just want to thank you for taking the time to check out this guide (and hopefully enjoy the game too)!</p>
+        <p><strong>Pokémon Academy Life Forever</strong> has been one of my favorite dating sims — fun, charming, and full of heart. But I’ll be honest: it has a steep learning curve. It took me multiple playthroughs to really understand how things worked, and I often found myself searching online for help… only to come up empty.</p>
+        <p>That’s where this guide comes in. Whether you’re new or returning, this is meant to teach you everything you need to know to get the most enjoyable experience possible — before and during your playthroughs.</p>
+        <p>I’ve done my best to make this guide clear, helpful, and easy to follow, so you can focus on what matters: enjoying your time at the Academy.</p>
+        <p>If you have any questions, feedback (hopefully positive!), or constructive criticism, feel free to reach out. I’d love to hear from you and make this guide even better.</p>
+        <p><strong>Good luck, and have fun!</strong></p>
+        <p>— Akira Kagami (MirrorOfCelestia)</p>
+        <p><em>Disclaimer: This is a fan-made guide and is not affiliated with, endorsed by, or officially connected to the developers of Pokémon Academy Life Forever. All characters, content, and materials referenced belong to their respective creators. This guide was made purely for educational and entertainment purposes.</em></p>
+      </section>
+
+      <section id="about">
+        <h2>About Pokémon Academy Life Forever (PALF)</h2>
+        <p>Pokémon Academy Life Forever (PALF) is a non-profit, fan-made Ren’Py visual novel developed by Freudian Creations. It takes place in an alternate Pokémon world where characters from the core Pokémon series are placed in a university setting to learn about the world of Pokémon.</p>
+        <p>PALF is a remake of the original Pokémon Academy Life, a project that led to developer burnout and was eventually scrapped. The team at Freudian Creations took up the project and rebuilt it into what it is today.</p>
+      </section>
+
+      <section id="story">
+        <h2>Story</h2>
+        <p>To become a Pokémon Champion has been your dream for as long as you can remember. But to achieve that dream, you first need to learn the ropes — and what better place than the prestigious Kobukan Academy?</p>
+        <p>After receiving an invitation to the academy, you’ll spend your time exploring the Kobukan region, catching and training Pokémon, and learning all about the world around you. Along the way, you might even form close bonds with new faces and old friends.</p>
+        <p>But Kobukan Academy is full of mysteries... including one pressing question: how will you ever pay off your university debt?</p>
+      </section>
+
+      <section id="characters">
+        <h2>Characters</h2>
+        <p>This section will be developed soon. Stay tuned for detailed character profiles and romance options!</p>
+      </section>
+
+      <section id="links">
+        <h2>Download</h2>
+        <p>Get the game files here:</p>
+        <p>I NEED PERMISSION</p>
+      </section>
+
+      <section id="social-media">
+        <h2>Social Media</h2>
+        <ul>
+          <li><a href="https://bsky.app/profile/pkmnacademylife.bsky.social" target="_blank">Bluesky</a></li>
+          <li><a href="https://x.com/pokemonvisual" target="_blank">X (Twitter)</a></li>
+          <li><a href="https://www.youtube.com/channel/UCVFjaOTaT_CMSL8MdIBRsBg" target="_blank">YouTube</a></li>
+          <li><a href="https://www.pokecommunity.com/threads/pokémon-academy-life-forever.493106/" target="_blank">PokeCommunity Thread</a></li>
+          <li><a href="https://discord.com/invite/RRd2Srjp7n" target="_blank">Discord</a></li>
+        </ul>
+      </section>
+    </main>
   </main>
 </body>
 </html>
